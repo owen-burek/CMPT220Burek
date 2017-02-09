@@ -21,9 +21,9 @@ public class Problem3_8{
     int second = 0; 
     int third = 0;
     
-    if(firstIn > secondIn && firstIn > thirdIn){
+    if(firstIn < secondIn && firstIn < thirdIn){
        first = firstIn;
-      if(secondIn > thirdIn){
+      if(secondIn < thirdIn){
         second = secondIn;
         third = thirdIn;
       }
@@ -32,9 +32,9 @@ public class Problem3_8{
         third = secondIn;
       }
     }
-    else if(secondIn > firstIn && secondIn > thirdIn){
+    else if(secondIn < firstIn && secondIn < thirdIn){
       first = secondIn;
-      if(firstIn > thirdIn){
+      if(firstIn < thirdIn){
         second = firstIn;
         third = thirdIn;
       }
@@ -43,9 +43,9 @@ public class Problem3_8{
         third = firstIn;
       }
     }
-    else if(thirdIn > firstIn && thirdIn > secondIn){
+    else if(thirdIn < firstIn && thirdIn < secondIn){
       first = thirdIn;
-      if(firstIn > secondIn){
+      if(firstIn < secondIn){
         second = firstIn;
         third = secondIn;
       }
@@ -57,7 +57,7 @@ public class Problem3_8{
     } 
 
 
-    System.out.println("The three numbers, from greatest to least, are:");
+    System.out.println("The three numbers, from least to greatest, are:");
     System.out.println(first + ", " + second + ", " + third);
   }
 }
