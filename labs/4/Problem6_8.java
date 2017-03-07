@@ -1,5 +1,5 @@
 /*
-file: Problem6_3.java
+file: Problem6_8.java
 author: Owen Burek
 course: CMPT 220L-200
 assignment: Lab 4 Problem 6.8
