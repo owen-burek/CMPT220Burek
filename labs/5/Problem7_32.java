@@ -21,25 +21,29 @@ public class Problem7_32{
     for(int i = 0; i < arrLen; i++)
       userArr[i] = input.nextInt();
 
-    pivArr = pivot(userArr);
+    userArr = pivot(userArr);
+
+    System.out.print("The array ordered around the pivot: ");
+    for(int i = 0; i < userArr.length; i++){
+      System.out.print(userArr[i] + " ");
+    }
   }
 
   public static int[] pivot(int[] arr){
     int pivot = arr[0];
     int[] arrPivot = new int[arr.length];
     for(int i = 0, x = 0, y = arr.length - 1; i < arr.length; i++){
-      if(x == y){
-        arrPivot[x] = pivot;
-      }
-      else if(pivot < arr[i]){
+      if(pivot > arr[i]){
         arrPivot[x] = arr[i];
         x++;
       }
-      else{
+      else if(pivot < arr[i]){
         arrPivot[y] = arr[i];
         y--;
       }
-
+      if(x == y){
+        arrPivot[x] = pivot;
+      }
     }
     return arrPivot;
   }
