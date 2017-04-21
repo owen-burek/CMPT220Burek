@@ -1,9 +1,8 @@
 /*
-file: Problem7_20.java
-author: Owen Burek
+file: Problem7_31.java
 course: CMPT 220L-200
 assignment: Lab 5 Problem 7.31
-due date: 03/30/17
+due date: 04/06/17
 */
 
 import java.util.*;

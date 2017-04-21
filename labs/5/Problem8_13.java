@@ -32,8 +32,9 @@ public class Problem8_13{
     for(int i = 0; i < a.length; i++){
       for(int x = 0; x < a[0].length; x++){
         if(a[i][x] > bigNum){
-          bigEle[0] = i-1;
-          bigEle[1] = x-1;
+          bigNum = a[i][x];
+          bigEle[0] = i;
+          bigEle[1] = x;
         }
       }
     }
