@@ -21,6 +21,7 @@ class Location{
     for(int i = 0; i < a.length; i++){
       for(int x = 0; x < a[0].length; x++){
         if(a[i][x] > bigNum){
+          bigNum = a[i][x];
           l.maxValue = a[i][x];
           l.row = i;
           l.column = x;
@@ -32,14 +33,16 @@ class Location{
   public static void main(String[] args){
     Scanner input = new Scanner(System.in);
     System.out.print("Please enter the number of rows and columns: ");
-    row = input.nextInt();
-    column = input.nextInt();
-    double[][] array = new double[rows][columns];
+    int row = input.nextInt();
+    int column = input.nextInt();
+    double[][] array = new double[row][column];
     System.out.println("Please enter the values in the array: ");
-    for(int i = 0; i < rows; i++){
-      for(int x = 0; x < columns; x++){
+    for(int i = 0; i < row; i++){
+      for(int x = 0; x < column; x++){
         array[i][x] = input.nextDouble();
       }
     }
+    Location bigEle = locateLargest(array);
+    System.out.println("The largest element, " + bigEle.maxValue + ", is located at position (" + bigEle.row + "," + bigEle.column + ")");
   }
 }
