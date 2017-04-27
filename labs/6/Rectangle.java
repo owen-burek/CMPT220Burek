@@ -6,6 +6,23 @@ assignment: Lab 6 Problem 9.1
 due date: 04/20/17
 */
 
+/*
+--------------------------------------
+|           Rectangle                |
+--------------------------------------
+| width: double                      |
+| height:                            |
+| Rectangle()                        |
+| Rectangle(w: double, h: double)    |
+| setWidth(w: double)                |
+| getWidth(): double                 |
+| setHeight(h: double)               |
+| getHeight(): double                |
+| getArea(): double                  |
+| getPerimeter(): double             |
+--------------------------------------
+*/
+
 class Rectangle{
   private double width = 1;
   private double height = 1;
