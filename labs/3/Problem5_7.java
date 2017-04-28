@@ -1,7 +1,9 @@
 /*
-Owen Burek
-February 23, 2017
-Lab 3 Problem 5.7
+file: Problem5_7.java
+author: Owen Burek
+course: CMPT 220L-200
+assignment: Lab 3 Problem 5.7
+due date: 02/23/2017
 */
 
 import java.util.*;

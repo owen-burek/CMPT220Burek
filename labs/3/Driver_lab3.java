@@ -1,7 +1,9 @@
 /*
-Owen Burek
-Fabruary 25, 2017
-Lab 3: Different Distances 
+file: Driver_lab3.java
+author: Owen Burek
+course: CMPT 220L-200
+assignment: Lab 3: Different distances
+due date: 02/23/2017
 */
 
 import java.util.Scanner;
