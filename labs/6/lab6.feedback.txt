@@ -1,0 +1,3 @@
+7 pts
+
+Programs produce compile error!
